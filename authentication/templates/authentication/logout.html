@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Log out" %}{% endblock %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-header">
+          <h2>{% trans "You have been logged out" %}</h2>
+        </div>
+        <div class="card-body">
+          <p class="card-text">{% trans "Thank you for using our service. If you'd like to continue, please log in again" %}.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">
+            <a href="{% url 'login' %}" class="btn">{% trans "Log In Again" %}</a>
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

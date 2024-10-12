@@ -1,0 +1,11 @@
+*~
+Session.vim
+*.swp
+*.swo
+__pycache__
+migrations/*
+.env
+*.sqlite3
+*.pyc
+doc/*
+__init__.py
