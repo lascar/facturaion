@@ -40,9 +40,19 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.admindocs',
     'facturaion',
     'authentication',
+    'invoices',
+    'companies',
+    'staff_members',
+    'invoice_lines',
+    'products',
+    'product_categories',
+    'customers',
+    'contacts',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

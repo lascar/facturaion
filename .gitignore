@@ -3,7 +3,7 @@ Session.vim
 *.swp
 *.swo
 __pycache__
-migrations/*
+*/migrations/*
 .env
 *.sqlite3
 *.pyc

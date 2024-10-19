@@ -28,6 +28,7 @@ class CustomUserManager(BaseUserManager):
 
         return self.create_user(username, email, password, **extra_fields)
 
+''' :model:autentication.CustomUser '''
 class CustomUser(AbstractUser):
     username = models.CharField(
         max_length=150,
@@ -41,6 +42,7 @@ class CustomUser(AbstractUser):
 
     objects = CustomUserManager()
 
+''' :model:autentication.Profile of :model:`autentication.CustomUser`, bearer of the magic token '''
 class Profile(models.Model):
     user = models.OneToOneField(CustomUser, related_name='profile', on_delete=models.CASCADE)
     magic_token = models.CharField(max_length=64, blank=True, null=True)

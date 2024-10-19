@@ -24,6 +24,7 @@ admin.site.site_title = "facturaion"
 admin.site.index_title = "facturaion Admin"
 
 urlpatterns = [
+    path('admin/doc/', include('django.contrib.admindocs.urls')),
     path('admin/', admin.site.urls),
     path('auth/', include('authentication.urls')),
     path("", TemplateView.as_view(template_name="home.html"), name="home"),
