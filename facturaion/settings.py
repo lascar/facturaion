@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.admindocs',
     'facturaion',
+    'factu',
     'authentication',
     'invoices',
     'companies',

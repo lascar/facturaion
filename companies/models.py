@@ -6,9 +6,9 @@ import pdb
 ''' :model:companies.Company has a responsible_staff_member as responsible person '''
 class Company(TimeStampedModel):
 
-    company_registration_number = models.CharField(max_length=100, unique=True, primary_key = True)
+    registration_number = models.CharField(max_length=100, unique=True, primary_key = True)
     name = models.CharField(max_length=100)
-    responsible_staff_member_id = models.IntegerField()
+    responsible_staff_member_id = models.IntegerField(blank=True, null=True)
 
     def __str__(self):
-        return self.name + ' - ' + self.company_registration_number
+        return self.name + ' - ' + self.registration_number
